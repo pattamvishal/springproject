@@ -2,17 +2,14 @@ package com.luv2code.springdemo;
 
 public class TrackCoach implements Coach {
 
-/*	vishal is a good boy*/
-	private FortuneService fortuneservice;
+	private FortuneService fortuneService;
 
-	
 	public TrackCoach() {
 		
 	}
 	
-	public TrackCoach(FortuneService fortuneservice) {
-		super();
-		this.fortuneservice = fortuneservice;
+	public TrackCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
 	}
 
 	@Override
@@ -21,9 +18,8 @@ public class TrackCoach implements Coach {
 	}
 
 	@Override
-	public String getDailyFortunes() {
-		// TODO Auto-generated method stub
-		return fortuneservice.getFortune();
+	public String getDailyFortune() {
+		return "Just Do It: " + fortuneService.getFortune();
 	}
 
 }

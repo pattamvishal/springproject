@@ -1,25 +1,31 @@
 package com.luv2code.springdemo;
 
 public class BaseballCoach implements Coach {
-	
-	private FortuneService fortuneservice;
-	
-	
-	
 
+	// define a private field for the dependency
+	private FortuneService fortuneService;
 	
-	public BaseballCoach(FortuneService thefortuneservice) {
-		fortuneservice = thefortuneservice;
+	// define a constructor for dependency injection
+	public BaseballCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
 	}
-
+	
 	@Override
 	public String getDailyWorkout() {
-		return "practise 30 minutes of batting";
+		return "Spend 30 minutes on batting practice";
 	}
 
 	@Override
-	public String getDailyFortunes() {
-		return fortuneservice.getFortune();
+	public String getDailyFortune() {		
+		// use my fortuneService to get a fortune		
+		return fortuneService.getFortune();
 	}
-
 }
+
+
+
+
+
+
+
+
