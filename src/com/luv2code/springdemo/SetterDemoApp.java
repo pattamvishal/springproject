@@ -23,6 +23,8 @@ public class SetterDemoApp {
 		System.out.println(theCoach.getEmailAddress());
 		
 		System.out.println(theCoach.getTeam());
+		
+		System.out.println(theCoach.getTeam2());
 				
 		// close the context
 		context.close();
