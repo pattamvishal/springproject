@@ -33,6 +33,7 @@
 		<!-- inject literal values -->   
 		<property name="emailAddress" value="${foo.email}" />
 		<property name="team" value="${foo.team}" />
+		<property name="team2" value="${foo.team2}" />
 				
     	</bean>
 
