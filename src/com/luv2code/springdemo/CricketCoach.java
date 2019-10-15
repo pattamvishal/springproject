@@ -6,7 +6,17 @@ public class CricketCoach implements Coach {
 	
 	// add new fields for emailAddress and team
 	private String emailAddress;
+	public String getTeam2() {
+		return team2;
+	}
+
+	public void setTeam2(String team2) {
+		this.team2 = team2;
+	}
+
 	private String team;
+	private String team2;
+
 	
 		
 	// create a no-arg constructor
